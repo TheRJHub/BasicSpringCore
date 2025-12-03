@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="
+        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <!-- bean definitions here -->
+    
+    
+         <bean name="account" class="comm.Account">     
+         <property name="accName" value="RJ"></property>
+         <property name="accNo" value="696969"></property>
+         </bean>
+         
+         
+        <bean name="bank" class="comm.Bank">
+        <property name="name" value="RKD BANK"></property>
+         <property name="location" value="RUSSIA"></property>
+         <property name="acc" ref="account"></property>
+        </bean>
+        
+</beans>

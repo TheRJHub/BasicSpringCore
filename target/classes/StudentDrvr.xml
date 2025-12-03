@@ -5,12 +5,18 @@
         http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
 
     <!-- bean definitions here -->
-    <bean name="person" class="com.Person"></bean>
     
-        <bean id="car" class="com.car"></bean>
-        <bean name="mobile" class="com.Mobile">
-        <property name="brand" value="Samsung"></property>
-        <property name="price" value="23000"></property>
-        </bean>
+    
+         <bean name="student" class="coom.Student">     
+         <property name="name" value="Rjt"></property>
+         <property name="marks">
+         <map>
+         <entry key="CS" value="2000" />
+         <entry key="IT" value="980"></entry>
+         </map>
+         </property>
+         
+         </bean>
+
         
 </beans>

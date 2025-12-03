@@ -14,7 +14,7 @@ public static void main(String[] args) {
 	
 	Mobile mobile = factory.getBean("mobile", Mobile.class);
 	
-	System.out.println(mobile.getBrand());
-	System.out.println(mobile.getPrice());
+	System.out.println(mobile.getBrand());//if we change setter method name in Mobile class then we get an exception
+	System.out.println(mobile.getPrice());//same here
 }
 }

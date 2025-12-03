@@ -12,5 +12,5 @@
         <property name="brand" value="Samsung"></property>
         <property name="price" value="23000"></property>
         </bean>
-
+        
 </beans>
